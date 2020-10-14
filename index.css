@@ -66,9 +66,12 @@ p {
 }
 .mine-row-badge {
     margin-bottom: 2px;
+    width: fit-content;
 }
 .mine-col-badge {
     white-space: nowrap;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .mine-timeline-block {
     padding: 20px;
