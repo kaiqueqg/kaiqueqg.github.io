@@ -8,9 +8,9 @@ p {
 
 .mine-h1 {
     text-align: center;
-    font-size: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px black solid;
 }
 
 .mine-h3 {
@@ -88,11 +88,11 @@ p {
     color: grey;
 }
 .mine-about{
-    border-width: 1px; 
+    border-width: 0px; 
     border-radius: 15px; 
     border-style: solid; 
-    vertical-align: middle;
     border-color: black;
+    vertical-align: middle;
     padding: 10px;
     margin: 5px;
 }
