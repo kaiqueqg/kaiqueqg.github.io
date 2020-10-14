@@ -87,3 +87,12 @@ p {
 .mine-timeline-time{
     color: grey;
 }
+.mine-about{
+    border-width: 1px; 
+    border-radius: 15px; 
+    border-style: solid; 
+    vertical-align: middle;
+    border-color: black;
+    padding: 10px;
+    margin: 5px;
+}
