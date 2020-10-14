@@ -14,115 +14,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-	<style>
-		p {
-			margin-bottom: 1px;
-		}
-
-		.middle {
-			text-align: center;
-		}
-
-		.mine-h1 {
-			text-align: center;
-			font-size: 50px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
-
-		.mine-h3 {
-			text-align: center;
-			padding-top: 3px;
-			padding-bottom: 15px;
-			border-bottom: 1px black solid;
-		}
-
-		.p-section {
-			text-align: center;
-			text-justify: auto;
-		}
-
-		.mine-progress {
-			background-color: rgb(204, 204, 204);
-			width: 70%;
-		}
-
-		.mine-progress-text {
-			padding-left: 5px;
-			color: black;
-		}
-
-		.row {
-			margin-bottom: 30px;
-		}
-
-		.mine-progress-bar {
-			border-style: solid;
-			border-width: 1px;
-			border-color: lightgray;
-			margin-bottom: 3px;
-			border-style: solid;
-			border-width: 1px;
-			border-color: lightgray;
-		}
-
-        .mine-badge {
-            margin-right: 2px;
-            margin-top: 3px;
-            padding-left: 6px;
-            padding-right: 6px;
-            padding-top: 2px;
-            padding-bottom: 2px;
-            font-weight: bold;
-            border-radius: 4px;
-            border-style: solid;
-            border-width: 1px;
-            border-color: grey;
-            color: black;
-            display:inline-block;
-        }
-        .mine-row-badge {
-            margin-bottom: 2px;
-        }
-        .mine-col-badge {
-            white-space: nowrap;
-        }
-        .mine-timeline-block {
-            padding: 20px;
-			border-left: solid 1px lightGrey;
-        }
-		.mine-timeline-block-right {
-            padding: 20px;
-			border-right: solid 1px lightGrey;
-			border-bottom: solid 1px lightGrey;
-        }
-		.mine-timeline-block-left {
-            padding: 20px;
-			border-bottom: solid 1px lightGrey;
-			border-left: solid 1px lightGrey;
-        }
-		.mine-timeline-time{
-			color: grey;
-		}
-	</style>
-
-	<style id="themeDark" disabled>
-		body{
-			background-color: black;
-		}
-	</style>
-
-	<style id="themeClear" disabled>
-        body {
-            background-color: white;
-        }
-	</style>
+	<link rel="stylesheet" href="index.css">
+	<link id="themeFile" rel="stylesheet" href="light.css">
 
 	<script>
 		function Start(){
-			//make sure that the initial theme is the Clear one;
-			document.getElementById("themeClear").attributes = "true";
-
 			let dateNow = new Date(Date.now());
 			let dateBegin = new Date(2019, 08, 10);
 
@@ -173,16 +69,13 @@
 		}
 
 		function changeTheme() {
-			let clear = document.getElementById("themeClear");
-            let dark = document.getElementById("themeDark");
+			let themeFile = document.getElementById("themeFile");
 
-			if (clear.disabled == true) {
-				dark.disabled = true;
-				clear.disabled = false;
+			if (themeFile.getAttribute("href") == "light.css") {
+				themeFile.setAttribute("href", "dark.css");
 			}
 			else {
-                dark.disabled = false;
-                clear.disabled = true;
+                themeFile.setAttribute("href", "light.css");
             }
         }
 	</script>
