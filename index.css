@@ -97,3 +97,13 @@ p {
 .mine-about{
     margin-top: 10px
 }
+
+.mine-div-time{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.mine-img-time{
+    width: 20px; 
+    height: 20px;
+}
