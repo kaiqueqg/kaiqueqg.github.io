@@ -18,85 +18,24 @@
 	<link id="themeFile" rel="stylesheet" href="light.css">
 	<link href='https://css.gg/mail.css' rel='stylesheet'>
 
-	<script>
-		function Start(){
-			let dateNow = new Date(Date.now());
-			let dateBegin = new Date(2019, 08, 10);
-
-			let pastTimeInYears = dateNow - dateBegin;
-			pastTimeInYears = pastTimeInYears/1000/60/60/24/365;
-			let yearsPast = Math.trunc(pastTimeInYears);
-			let monthsPast = Math.trunc((pastTimeInYears - yearsPast)*365/30);
-			
-			let message = "Analista de software - " + yearsPast;
-			if(yearsPast > 1){
-				message += " anos";
-			}
-			else{
-				message += " ano "
-			}
-			message += "e " + monthsPast;
-			if(monthsPast > 1){
-				
-				message += " meses.";
-			}
-			else{
-				message += " mês."
-			}
-
-			document.getElementById("timeInCurrentCompany").innerHTML = message;
-		}
-
-		function hideSection(element){
-			if (element.getElementsByTagName("i")[0].innerHTML === "expand_more") {
-				element.getElementsByTagName("i")[0].innerHTML = "expand_less";
-				element.getElementsByClassName("description")[0].style.display = "";
-			}
-			else {
-				element.getElementsByTagName("i")[0].innerHTML = "expand_more";
-				element.getElementsByClassName("description")[0].style.display = "none";
-			}
-		}
-
-		function openDescription(element) {
-			if (element.getElementsByTagName("i")[0].innerHTML === "expand_more") {
-				element.getElementsByTagName("i")[0].innerHTML = "expand_less";
-				element.getElementsByClassName("description")[0].style.display = "";
-			}
-			else {
-				element.getElementsByTagName("i")[0].innerHTML = "expand_more";
-				element.getElementsByClassName("description")[0].style.display = "none";
-			}
-		}
-
-		function changeTheme() {
-			let themeFile = document.getElementById("themeFile");
-
-			if (themeFile.getAttribute("href") == "light.css") {
-				themeFile.setAttribute("href", "dark.css");
-			}
-			else {
-                themeFile.setAttribute("href", "light.css");
-            }
-        }
-	</script>
+	<script src="index.js"></script>	
 
 </head>
 	<body>
 		<div class="container">
-			<button onclick="changeTheme();">Change Theme</button>
+			<!-- <button onclick="changeTheme();">Change Theme</button> -->
 		
 			<h1 class="mine-h1">Kaique Quilles Gomes</h1>
 
 			<!--About-->
 			<div class="row justify-content-center" style="margin-bottom: 0px;">
 				<div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
-					<div class="row justify-content-center">
+					<div class="row justify-content-center" style="margin-top: 10px; margin-bottom: 10px;">
 						<div class="col-5">
 							<img class="img-thumbnail" style="height:auto" src="https://media-exp1.licdn.com/dms/image/C4D03AQGFd5JK4yDymw/profile-displayphoto-shrink_200_200/0?e=1607558400&v=beta&t=mbxQHNUFTEAM_-5kiIpENKnWqf3eU3jhxzM_lg3HEVc" alt="...">
 						</div>
 					</div>
-					<div class="row justify-content-center">
+					<div class="row justify-content-center" style="margin-top: 10px; margin-bottom: 10px;">
 						<div class="mine-about">
 							<div>
 								<img src="icons/gmail16.png"></img> - kaiqueqg@gmail.com
@@ -125,7 +64,7 @@
 			<h3 class="mine-h3">Conhecimento</h3>
 				<div class="row justify-content-center">
 					<div class="col-xl-8 col-lg-8 col-md-10 col-sm-12">
-						<h4>Profissional:</h4>
+						<h4 class="mine-h4">Profissional:</h4>
 
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
 							<div class="mine-progress" style="width: 50%; background-color: rgb(224, 191, 255);">
@@ -135,12 +74,10 @@
 								</div>
 							</div>
 							<div class="description" style="display:none; padding: 10px; margin:2px; min-height: fit-content;">
-
 								<h5>Intermediário - Avançado</h5>
 								<ul>
-									<li>Primeira linguagem do qual trabalhei profissionalmente. Era meu foco no inicio da carreia mas depois mudei o foco para <span class="badge badge-secondary">C#</span>. </li>
-									<li>A linguagem que mais gostei de trabalhar devido sua complexidade e necessidade técnica de conhecimento.</li>
-									<li>Infelizmente a raridade de emprego e baixa mobilidade me levaram a mudar para o <span class="badge badge-secondary">C#</span>.</li>
+									<li>2 anos de experiência trabalhando com uma virtual machine na Totvs.</li>
+									<li>7 meses trabalhando na RDI.</li>
 								</ul>
 							</div>
 						</div>
@@ -154,32 +91,54 @@
 							<div class="description" style="display:none; padding: 10px; margin:2px; min-height: fit-content;">
 								<h5>Avançado</h5>
 								<ul>
-									<li>Segunda linguagem que trabalhei profissionalmente. Comecei inicialmente a trabalhar com <span class="badge badge-secondary">C#</span> puro.</li>
+									<li>5 meses trabalhando na RDI com o software utilizado pelos restaurantes do McDonald's.</li>
+									<li>1 ano e meio estudando e programando com Unity Engine para desenvolvimento de jogo.</li>
+									<li>1 ano e 3 meses trabalhando na Afresp desenvolvendo o software principal na empresa.</li>
+									<li>1 ano e 1 mês trabalhando desenvolvendo em .NET sistemas para equipe do departamento de segurança das agências no ITAU.</li>
 								</ul>
 							</div>
 						</div>
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
-							<div class="mine-progress" style="width: 75%; background-color: rgb(160, 190, 255);">
+							<div class="mine-progress" style="width: 80%; background-color: rgb(160, 190, 255);">
 								<div class="mine-progress-text">
 									<i class="material-icons" style="vertical-align: middle;">expand_more</i>
 									<b>ASP.NET Framework</b>
 								</div>
 							</div>
+							<div class="description" style="display:none; padding: 10px; margin:2px; min-height: fit-content;">
+								<h5>Avançado</h5>
+								<ul>
+									<li>1 ano e 1 mês trabalhando desenvolvendo em .NET sistemas para equipe do departamento de segurança das agências no ITAU.</li>
+								</ul>
+							</div>
 						</div>
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
-							<div class="mine-progress" style="width: 70%; background-color: rgb(255, 164, 164);">
+							<div class="mine-progress" style="width: 60%; background-color: rgb(255, 164, 164);">
 								<div class="mine-progress-text">
 									<i class="material-icons" style="vertical-align: middle;">expand_more</i>
 									<b>SQL + SQL Server</b>
 								</div>
 							</div>
+							<div class="description" style="display:none; padding: 10px; margin:2px; min-height: fit-content;">
+								<h5>Intermediário</h5>
+								<ul>
+									<li>1 ano e 3 meses trabalhando na Afresp criando, atualizando, consultando registros utilizando Entity e Dapper.</li>
+									<li>1 ano e 1 mês trabalhando no Itau com o banco de dados principal. Utilizando Entity e Dapper.</li>
+								</ul>
+							</div>
 						</div>
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
-							<div class="mine-progress" style="width: 60%; background-color: rgb(241, 239, 71);">
+							<div class="mine-progress" style="width: 70%; background-color: rgb(241, 239, 71);">
 								<div class="mine-progress-text">
 									<i class="material-icons" style="vertical-align: middle;">expand_more</i>
 									<b>Javascript + JQuery + Ajax</b>
 								</div>
+							</div>
+							<div class="description" style="display:none; padding: 10px; margin:2px; min-height: fit-content;">
+								<h5>Intermediário</h5>
+								<ul>
+									<li>1 ano e 1 mês trabalhando com páginas web internas para a equipe do Itau. Utilizando Jquery, Ajax e outras ferramentas.</li>
+								</ul>
 							</div>
 						</div>
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
@@ -189,13 +148,18 @@
 									<b>HTML + CSS + Bootstrap</b>
 								</div>
 							</div>
+							<div class="description" style="display:none; padding: 10px; margin:2px; min-height: fit-content;">
+								<h5>Intermediário</h5>
+								<ul>
+									<li>1 ano e 1 mês trabalhando desenvolvendo diversas páginas para o Itau.</li>
+								</ul>
+							</div>
 						</div>
 
-						<h4>Aprendendo:</h4>
+						<h4 class="mine-h4">Aprendendo:</h4>
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
 							<div class="mine-progress" style="width: 50%;">
 								<div class="mine-progress-text">
-									<i class="material-icons" style="vertical-align: middle;">expand_more</i>
 									<b>ASP.NET Core</b>
 								</div>
 							</div>
@@ -203,7 +167,6 @@
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
 							<div class="mine-progress" style="width: 40%;">
 								<div class="mine-progress-text">
-									<i class="material-icons" style="vertical-align: middle;">expand_more</i>
 									<b>Angular</b>
 								</div>
 							</div>
@@ -211,7 +174,6 @@
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
 							<div class="mine-progress" style="width: 50%;">
 								<div class="mine-progress-text">
-									<i class="material-icons" style="vertical-align: middle;">expand_more</i>
 									<b>MongoDB</b>
 								</div>
 							</div>
@@ -219,14 +181,13 @@
 						<div class="mine-progress-bar" role="button" onclick="openDescription(this)">
 							<div class="mine-progress" style="width: 70%;">
 								<div class="mine-progress-text">
-									<i class="material-icons" style="vertical-align: middle;">expand_more</i>
 									<b>Unity Game Engine</b>
 								</div>
 							</div>
 						</div>
 
 						<!-- Tags of tool, framworks, patterns -->
-						<h4>Ferramentas, frameworks, padrões e etc...</h4>
+						<h4 class="mine-h4">Ferramentas, frameworks, padrões e etc...</h4>
 						<div class="container">
 							<div class="row mine-row-badge justify-content-start">
 								<div class="col mine-col-badge"><div class="mine-badge">GIT</div></div>

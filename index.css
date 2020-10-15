@@ -20,6 +20,10 @@ p {
     border-bottom: 1px black solid;
 }
 
+.mine-h4{
+    margin-top: 20px;
+}
+
 .p-section {
     text-align: center;
     text-justify: auto;
