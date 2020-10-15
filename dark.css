@@ -1,3 +1,102 @@
+p {
+}
+
 body{
-    background-color: black;
+    background-color: rgb(8, 8, 32);
+}
+
+.middle {
+}
+
+.mine-h1 {
+    border-bottom-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.mine-h3 {
+    border-bottom-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.mine-h4{
+    color: white;
+}
+
+.mine-text{
+    color: white;
+}
+
+.p-section {
+}
+
+.mine-progress {
+    background-color: rgb(80, 80, 80);
+}
+
+.mine-progress-ccplusplus{
+    width: 50%; 
+    background-color: rgb(224, 191, 255);
+}
+
+.mine-progress-csharp{
+    width: 90%; 
+    background-color: rgb(160, 190, 255);
+}
+
+.mine-progress-aspnet{
+    width: 80%; 
+    background-color: rgb(160, 190, 255);
+}
+
+.mine-progress-sql{
+    width: 60%; 
+    background-color: rgb(255, 164, 164);
+}
+
+.mine-progress-js{
+    width: 70%; 
+    background-color: rgb(241, 239, 71);
+}
+
+.mine-progress-html{
+    width: 70%; 
+    background-color: rgb(255, 176, 102);
+}
+
+.mine-progress-text {
+    color: rgb(255, 255, 255);
+}
+
+.row {
+}
+
+.mine-progress-bar {
+    border-color: rgb(255, 255, 255);
+}
+
+.mine-badge {
+    border-color: rgb(211, 211, 211);
+    color: rgb(224, 224, 224);
+}
+.mine-row-badge {
+    margin-bottom: 2px;
+    width: fit-content;
+}
+.mine-col-badge {
+}
+.mine-timeline-block {
+    border-left: solid 1px rgb(77, 77, 77);
+}
+.mine-timeline-block-right {
+    border-right: solid 1px rgb(82, 82, 82);
+    border-bottom: solid 1px rgb(102, 102, 102);
+}
+.mine-timeline-block-left {
+    border-bottom: solid 1px rgb(97, 97, 97);
+    border-left: solid 1px rgb(102, 102, 102);
+}
+.mine-timeline-time{
+}
+.mine-about{
+    border-color: white;
 }

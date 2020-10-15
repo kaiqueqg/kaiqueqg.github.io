@@ -1,6 +1,4 @@
 function Start(){
-    
-
     document.getElementById("timeInCurrentCompany").innerHTML = "Analista de software - " + CalculateCurrentTimeOnCompany() + ".";
 }
 
@@ -64,3 +62,5 @@ function changeTheme() {
         themeFile.setAttribute("href", "light.css");
     }
 }
+
+Start();
