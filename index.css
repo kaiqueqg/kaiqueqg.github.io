@@ -95,10 +95,6 @@ p {
     color: grey;
 }
 .mine-about{
-    border-width: 0px; 
-    border-radius: 15px; 
-    border-style: solid; 
-    border-color: black;
     vertical-align: middle;
     padding: 10px;
     margin: 5px;
