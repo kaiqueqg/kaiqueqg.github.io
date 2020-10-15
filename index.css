@@ -95,7 +95,5 @@ p {
     color: grey;
 }
 .mine-about{
-    vertical-align: middle;
-    padding: 10px;
-    margin: 5px;
+    margin-top: 10px
 }
