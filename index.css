@@ -10,18 +10,21 @@ p {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px black solid;
+    border-radius: 7px;
 }
 
 .mine-h3 {
     text-align: center;
-    padding-top: 3px;
-    padding-bottom: 15px;
-    border-bottom: 1px black solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 .mine-h4{
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .p-section {
