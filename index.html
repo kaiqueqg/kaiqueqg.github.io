@@ -19,36 +19,77 @@
 	<link href='https://css.gg/mail.css' rel='stylesheet'>
 </head>
 	<body>
+		<div id="initModal" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="ModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row justify-content-center">
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-secondary active">
+									<input type="radio" name="options" id="portugues" autocomplete="off" checked> Português
+								</label>
+								<label class="btn btn-secondary">
+									<input type="radio" name="options" id="english" autocomplete="off"> English
+								</label>
+								<label class="btn btn-secondary">
+									<input type="radio" name="options" id="francais" autocomplete="off"> Français
+								</label>
+							</div>
+						</div>
+						<div class="row justify-content-center" style="margin-bottom: 0px;">
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-secondary active">
+									<input type="radio" name="options" id="light" autocomplete="off" checked> Light
+								</label>
+								<label class="btn btn-secondary">
+									<input type="radio" name="options" id="dark" autocomplete="off"> Dark
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="container">
-			<h3 class="mine-h3">Kaique Q. Gomes</h3>
-			<div class="row justify-content-center" style="margin-bottom: 0px;">
+			
+			<div class="row mine-row justify-content-center">
+				<h3 class="">Kaique Q. Gomes</h3>
 				<div class="col-12">
-					<div class="row justify-content-center" style="margin-top: 10px; margin-bottom: 10px;">
-						<div class="col-12 text-center">
+					<div class="row justify-content-center">
+						
+						<div class="col-3 text-center">
 							<img class="img-thumbnail shadow-sm" style="height:auto; border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQGFd5JK4yDymw/profile-displayphoto-shrink_200_200/0?e=1607558400&v=beta&t=mbxQHNUFTEAM_-5kiIpENKnWqf3eU3jhxzM_lg3HEVc" alt="...">
 						</div>
 						<div class="col-xl-3 col-lg-5 col-md-10 col-sm-11 col-11">
 							<div class="mine-about">
 								<div class="mine-text">
-									<img src="icons/graduation16.png"></img> - Engenheiro da Computação
+									<img src="icons/graduation16.png" style="vertical-align: middle;"></img>
+									 Engenheiro da Computação
 								</div>
 								<div class="mine-text">
-									<img src="icons/gmail16.png"></img><a href="mailto:kaiqueqg@gmail.com"> - kaiqueqg@gmail.com</a>
+									<img src="icons/linkedin16.png"></img><a href="https://www.linkedin.com/in/kaiquequillesgomes/"> LinkedIn</a>
 								</div>
 								<div class="mine-text">
-									<img src="icons/whatsapp16.png"></img><a href="https://api.whatsapp.com/send/?phone=5511996407676&text&app_absent=0"> - +55 (11) 99640-7676</a>
+									<img src="icons/gmail16.png"></img><a href="mailto:kaiqueqg@gmail.com"> kaiqueqg@gmail.com</a>
 								</div>
 								<div class="mine-text">
-									<img src="icons/google-maps16.png"></img><a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Vila+Prudente/@-23.5843073,-46.5842239,1035m/data=!3m1!1e3!4m5!3m4!1s0x94ce5c1270a396c9:0x3a1e025b790373b8!8m2!3d-23.5843897!4d-46.5819115"> - Próximo Metrô Vila Prudente</a>
+									<img src="icons/whatsapp16.png"></img><a href="https://api.whatsapp.com/send/?phone=5511996407676&text&app_absent=0"> +55 (11) 99640-7676</a>
 								</div>
 								<div class="mine-text">
-									<img src="icons/brazil16.png"></img> - Nativo
+									<img src="icons/google-maps16.png"></img><a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Vila+Prudente/@-23.5843073,-46.5842239,1035m/data=!3m1!1e3!4m5!3m4!1s0x94ce5c1270a396c9:0x3a1e025b790373b8!8m2!3d-23.5843897!4d-46.5819115"> Próximo Metrô Vila Prudente</a>
 								</div>
 								<div class="mine-text">
-									<img src="icons/united-states16.png"></img> - Fluente
+									<img src="icons/brazil16.png"></img> Nativo
 								</div>
 								<div class="mine-text">
-									<img src="icons/france16.png"></img> - Intermediário
+									<img src="icons/united-states16.png"></img> Fluente
+								</div>
+								<div class="mine-text">
+									<img src="icons/france16.png"></img> Intermediário
 								</div>
 							</div>
 						</div>
@@ -57,7 +98,7 @@
 			</div>
 				<!-- Conhecimento -->
 			<h3 class="mine-h3">Conhecimento</h3>
-			<div class="row justify-content-center" style="margin-bottom: 0px;">
+			<div class="row mine-row justify-content-center">
 				<div class="col-xl-8 col-lg-8 col-md-10 col-sm-12">
 					<h4 class="mine-h4">Profissional:</h4>
 
@@ -222,7 +263,7 @@
 				</div>
 			</div>
 			<h3 class="mine-h3"> Experiência profisional: </h3>
-			<div class="row justify-content-center" style="margin-bottom: 0px;">
+			<div class="row mine-row justify-content-center">
 				<div class="col-xl-8 col-lg-8 col-md-10 col-sm-12">
 					<div class="mine-div-time"><img class="mine-img-time" src="icons/hourglass32black.png"></img> - 07/2012</div>
 					<div class="mine-timeline-block">

@@ -5,9 +5,6 @@ body{
     background-color: rgb(8, 8, 32);
 }
 
-.middle {
-}
-
 .mine-h1 {
     border-bottom-color: rgb(255, 255, 255);
     color: white;
@@ -24,9 +21,6 @@ body{
 
 .mine-text{
     color: white;
-}
-
-.p-section {
 }
 
 .mine-progress {
