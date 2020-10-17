@@ -18,8 +18,8 @@ p {
     padding-top: 7px;
     padding-bottom: 7px;
     margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 
 .mine-h4{
@@ -43,7 +43,18 @@ p {
 }
 
 .row {
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mine-row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px; 
+    border-width:1px; 
+    border-style:solid; 
+    border-color:grey; 
+    box-shadow: 4px 4px lightgrey;
 }
 
 .mine-progress-bar {

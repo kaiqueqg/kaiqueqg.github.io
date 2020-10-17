@@ -63,4 +63,6 @@ function changeTheme() {
     }
 }
 
+//$("#initModal").modal('show');
+
 Start();
