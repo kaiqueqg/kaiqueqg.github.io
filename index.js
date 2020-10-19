@@ -42,6 +42,8 @@ function hideSection(element){
 }
 
 function openDescription(element) {
+    if($("[data-toggle='tooltip']").attr("aria-describedby") != undefined) $("[data-toggle='tooltip']").tooltip('toggle');
+
     if (element.getElementsByTagName("i")[0].innerHTML === "expand_more") {
         element.getElementsByTagName("i")[0].innerHTML = "expand_less";
         element.getElementsByClassName("description")[0].style.display = "";
@@ -90,7 +92,9 @@ function changeLanguage(language){
     }
 }
 
-$("#initModal").modal('show');
+//$("#initModal").modal('show');
 
 Start();
 initialLanguage();
+
+$("[data-toggle='tooltip']").tooltip('toggle');
