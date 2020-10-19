@@ -63,6 +63,34 @@ function changeTheme() {
     }
 }
 
-//$("#initModal").modal('show');
+function initialLanguage(){
+    changeLanguage(navigator.language);
+}
+
+function changeLanguage(language){
+    if(language === 'pt-BR'){
+        $('[lang="pt-BR"]').toggle(true);
+        $('[lang="en-US"]').toggle(false);
+        $('[lang="fr"]').toggle(false);
+    }
+    else if(language === 'en-US'){
+        $('[lang="pt-BR"]').toggle(false);
+        $('[lang="en-US"]').toggle(true);
+        $('[lang="fr"]').toggle(false);
+    }
+    else if(language === 'fr'){
+        $('[lang="pt-BR"]').toggle(false);
+        $('[lang="en-US"]').toggle(false);
+        $('[lang="fr"]').toggle(true);
+    }
+    else{
+        $('[lang="pt-BR"]').toggle(false);
+        $('[lang="en-US"]').toggle(true);
+        $('[lang="fr"]').toggle(false);
+    }
+}
+
+$("#initModal").modal('show');
 
 Start();
+initialLanguage();

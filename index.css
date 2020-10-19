@@ -6,6 +6,11 @@ p {
     text-align: center;
 }
 
+body{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .mine-h1 {
     text-align: center;
     padding-top: 10px;
@@ -15,8 +20,10 @@ p {
 
 .mine-h3 {
     text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-top: 5px;
     margin-bottom: 0px;
     border-radius: 0px;
@@ -40,11 +47,6 @@ p {
 .mine-progress-text {
     padding-left: 5px;
     color: black;
-}
-
-.row {
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .mine-row{
