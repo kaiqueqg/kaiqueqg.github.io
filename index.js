@@ -1,5 +1,11 @@
 function Start(){
+    //set the initial language
+    initialLanguage();
+
+    //update the time of current job
     document.getElementById("timeInCurrentCompany").innerHTML = "Analista de software - " + CalculateCurrentTimeOnCompany() + ".";
+
+    //$("[data-toggle='tooltip']").tooltip('toggle');
 }
 
 function CalculateCurrentTimeOnCompany(){
@@ -92,9 +98,4 @@ function changeLanguage(language){
     }
 }
 
-//$("#initModal").modal('show');
-
 Start();
-initialLanguage();
-
-$("[data-toggle='tooltip']").tooltip('toggle');

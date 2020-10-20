@@ -19,93 +19,68 @@
 	<link href='https://css.gg/mail.css' rel='stylesheet'>
 </head>
 	<body>
-		<div id="initModal" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="ModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<div class="row justify-content-center">
-							<button onclick="changeLanguage('pt-BR')" class="btn btn-secondary" data-dismiss="modal">Português</button>
-							<button onclick="changeLanguage('en-US')" class="btn btn-secondary" data-dismiss="modal">English</button>
-							<button onclick="changeLanguage('fr')" class="btn btn-secondary" data-dismiss="modal">Français</button>
-						</div>
-						<!-- <div class="row justify-content-center" style="margin-bottom: 0px;">
-							<div class="btn-group btn-group-toggle" data-toggle="buttons">
-								<label class="btn btn-secondary active">
-									<input type="radio" name="options" id="light" autocomplete="off" checked> Light
-								</label>
-								<label class="btn btn-secondary">
-									<input type="radio" name="options" id="dark" autocomplete="off"> Dark
-								</label>
-							</div>
-						</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<h3 class="mine-h3">Kaique Q. Gomes</h3>
+		<h1 class="mine-h3">Kaique Q. Gomes</h1>
 		<div class="row justify-content-center" style="padding-left: 0px; padding-right: 0px;">
-			<div class="col-xl-3 col-lg-5 col-md-10 col-sm-11 col-11 text-center">
-				<img class="img-thumbnail shadow-sm" style="height:auto; border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQGFd5JK4yDymw/profile-displayphoto-shrink_200_200/0?e=1607558400&v=beta&t=mbxQHNUFTEAM_-5kiIpENKnWqf3eU3jhxzM_lg3HEVc" alt="...">
+			<div class="col-xl-2 col-lg-11 col-md-11 col-sm-11 col-11 mine-about-group">
+				<img class="mx-auto d-block" style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQGFd5JK4yDymw/profile-displayphoto-shrink_200_200/0?e=1607558400&v=beta&t=mbxQHNUFTEAM_-5kiIpENKnWqf3eU3jhxzM_lg3HEVc" alt="...">
 			</div>
-			<div class="col-xl-3 col-lg-5 col-md-10 col-sm-11 col-11">
+			<div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-11 mine-about-group">
+				<div class="mine-about" lang="pt-BR">
+					<img src="icons/graduation16.png" style="vertical-align: middle;"></img>
+					Engenheiro da Computação
+				</div>
+				<div class="mine-about" lang="en-US">
+					<img src="icons/graduation16.png" style="vertical-align: middle;"></img>
+					Computer Engineer
+				</div>
+				<div class="mine-about" lang="fr">
+					<img src="icons/graduation16.png" style="vertical-align: middle;"></img>
+					Ingénieur informaticien
+				</div>
 				<div class="mine-about">
-					<div class="mine-text" lang="pt-BR">
-						<img src="icons/graduation16.png" style="vertical-align: middle;"></img>
-						Engenheiro da Computação
-					</div>
-					<div class="mine-text" lang="en-US">
-						<img src="icons/graduation16.png" style="vertical-align: middle;"></img>
-						Computer Engineer
-					</div>
-					<div class="mine-text" lang="fr">
-						<img src="icons/graduation16.png" style="vertical-align: middle;"></img>
-						Ingénieur informaticien
-					</div>
-					<div class="mine-text">
-						<img src="icons/linkedin16.png"></img><a href="https://www.linkedin.com/in/kaiquequillesgomes/"> LinkedIn</a>
-					</div>
-					<div class="mine-text">
-						<img src="icons/gmail16.png"></img><a href="mailto:kaiqueqg@gmail.com"> kaiqueqg@gmail.com</a>
-					</div>
-					<div class="mine-text">
-						<img src="icons/whatsapp16.png"></img><a href="https://api.whatsapp.com/send/?phone=5511996407676&text&app_absent=0"> +55 (11) 99640-7676</a>
-					</div>
-					<div lang="pt-BR" class="mine-text">
-						<img src="icons/google-maps16.png"></img><a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Vila+Prudente/@-23.5843073,-46.5842239,1035m/data=!3m1!1e3!4m5!3m4!1s0x94ce5c1270a396c9:0x3a1e025b790373b8!8m2!3d-23.5843897!4d-46.5819115"> Próximo Metrô Vila Prudente</a>
-					</div>
-					<div lang="en-US" class="mine-text">
-						<img src="icons/google-maps16.png"></img><a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Vila+Prudente/@-23.5843073,-46.5842239,1035m/data=!3m1!1e3!4m5!3m4!1s0x94ce5c1270a396c9:0x3a1e025b790373b8!8m2!3d-23.5843897!4d-46.5819115"> Next to Subway Vila Prudente</a>
-					</div>
-					<div lang="fr" class="mine-text">
-						<img src="icons/google-maps16.png"></img><a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Vila+Prudente/@-23.5843073,-46.5842239,1035m/data=!3m1!1e3!4m5!3m4!1s0x94ce5c1270a396c9:0x3a1e025b790373b8!8m2!3d-23.5843897!4d-46.5819115"> Près du métro Vila Prudente</a>
-					</div>
-					<div lang="pt-BR" class="mine-text">
-						<img src="icons/brazil16.png"></img> Nativo
-					</div>
-					<div lang="en-US" class="mine-text">
-						<img src="icons/brazil16.png"></img> Native
-					</div>
-					<div lang="fr" class="mine-text">
-						<img src="icons/brazil16.png"></img> Couramment
-					</div>
-					<div lang="pt-BR" class="mine-text">
-						<img src="icons/united-states16.png"></img> Fluente
-					</div>
-					<div lang="en-US" class="mine-text">
-						<img src="icons/united-states16.png"></img> Fluent
-					</div>
-					<div lang="fr" class="mine-text">
-						<img src="icons/united-states16.png"></img> Couramment
-					</div>
-					<div lang="pt-BR" class="mine-text">
-						<img src="icons/france16.png"></img> Intermediário
-					</div>
-					<div lang="en-US" class="mine-text">
-						<img src="icons/france16.png"></img> Intermediate
-					</div>
-					<div lang="fr" class="mine-text">
-						<img src="icons/france16.png"></img> Intermediare
-					</div>
+					<img src="icons/linkedin16.png"></img><a href="https://www.linkedin.com/in/kaiquequillesgomes/"> LinkedIn </a>
+				</div>
+				<div class="mine-about">
+					<img src="icons/gmail16.png"></img><a href="mailto:kaiqueqg@gmail.com"> kaiqueqg@gmail.com</a>
+				</div>
+				<div class="mine-about">
+					<img src="icons/whatsapp16.png"></img><a href="https://api.whatsapp.com/send/?phone=5511996407676&text&app_absent=0"> +55 (11) 99640-7676</a>
+				</div>
+				<div lang="pt-BR" class="mine-about">
+					<img src="icons/google-maps16.png"></img><a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Vila+Prudente/@-23.5843073,-46.5842239,1035m/data=!3m1!1e3!4m5!3m4!1s0x94ce5c1270a396c9:0x3a1e025b790373b8!8m2!3d-23.5843897!4d-46.5819115"> Próximo Metrô Vila Prudente</a>
+				</div>
+				<div lang="en-US" class="mine-about">
+					<img src="icons/google-maps16.png"></img><a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Vila+Prudente/@-23.5843073,-46.5842239,1035m/data=!3m1!1e3!4m5!3m4!1s0x94ce5c1270a396c9:0x3a1e025b790373b8!8m2!3d-23.5843897!4d-46.5819115"> Next to Subway Vila Prudente</a>
+				</div>
+				<div lang="fr" class="mine-about">
+					<img src="icons/google-maps16.png"></img><a href="https://www.google.com.br/maps/place/Esta%C3%A7%C3%A3o+Vila+Prudente/@-23.5843073,-46.5842239,1035m/data=!3m1!1e3!4m5!3m4!1s0x94ce5c1270a396c9:0x3a1e025b790373b8!8m2!3d-23.5843897!4d-46.5819115"> Près du métro Vila Prudente</a>
+				</div>
+				<div lang="pt-BR" class="mine-about">
+					<img src="icons/brazil16.png"></img> Nativo
+				</div>
+				<div lang="en-US" class="mine-about">
+					<img src="icons/brazil16.png"></img> Native
+				</div>
+				<div lang="fr" class="mine-about">
+					<img src="icons/brazil16.png"></img> Couramment
+				</div>
+				<div lang="pt-BR" class="mine-about">
+					<img src="icons/united-states16.png"></img> Fluente
+				</div>
+				<div lang="en-US" class="mine-about">
+					<img src="icons/united-states16.png"></img> Fluent
+				</div>
+				<div lang="fr" class="mine-about">
+					<img src="icons/united-states16.png"></img> Couramment
+				</div>
+				<div lang="pt-BR" class="mine-about">
+					<img src="icons/france16.png"></img> Intermediário
+				</div>
+				<div lang="en-US" class="mine-about">
+					<img src="icons/france16.png"></img> Intermediate
+				</div>
+				<div lang="fr" class="mine-about">
+					<img src="icons/france16.png"></img> Intermediare
 				</div>
 			</div>
 		</div>
@@ -115,7 +90,7 @@
 		<h3 lang="en-US" class="mine-h3">Knowledge</h3>
 		<h3 lang="fr" class="mine-h3">Connaissance</h3>
 		<div class="row justify-content-center">
-			<div class="col-6">
+			<div class="col-xl-6 col-lg-8 col-md-11 col-sm-11 col-11">
 				<h4 lang="pt-BR" class="mine-h4">Profissional:</h4>
 				<h4 lang="en-US" class="mine-h4">Professional:</h4>
 				<h4 lang="fr" class="mine-h4">Professionnel:</h4>
@@ -297,7 +272,7 @@
 		<!-- Experiencia profissional -->
 		<h3 class="mine-h3"> Experiência profisional: </h3>
 		<div class="row justify-content-center">
-			<div class="col-xl-8 col-lg-8 col-md-10 col-sm-12">
+			<div class="col-xl-8 col-lg-8 col-md-11 col-sm-11 col-11">
 				<div class="mine-div-time"><img class="mine-img-time" src="icons/hourglass32black.png"></img> - 07/2012</div>
 				<div class="mine-timeline-block">
 					<h4>Totvs S/A</h4>
@@ -305,7 +280,7 @@
 					<ul>
 						<li>Manutenção e desenvolvimento de virtual machine em <span class="badge badge-secondary">C/C++</span>para a linguagem da própria empresa (ADVPL) que é responsável por fazer o parsing e compilação do código para bytecode.</li>
 						<li>Experiência com CMake.</li>
-						<li>Experiência com metodologia Ágil (Kanban, Sprints e Daily Meetings)</li>
+						<li>Experiência com metodologia <span class="badge badge-secondary">Ágil</span> (<span class="badge badge-secondary">Kanban</span>, <span class="badge badge-secondary">Sprints</span> e <span class="badge badge-secondary">Daily Meetings</span>)</li>
 					</ul>
 				</div>
 				<div class="mine-div-time"><img class="mine-img-time" src="icons/hourglass32black.png"></img> - 07/2014</div>
@@ -314,7 +289,7 @@
 					<div class="mine-timeline-time">Desenvolvedor de software - 1 ano</div>
 					<ul>
 						<li>Manutenção do software e desenvolvimento de novas funcionalidades em <span class="badge badge-secondary">C/C++</span> e <span class="badge badge-secondary">C#</span> que controla o caixa e a produção de lanches na cozinha dos restaurantes do McDonald's.</li>
-						<li>Controle e planejamento de atividades utilizando sprints e daily meetings.</li>
+						<li>Controle e planejamento de atividades utilizando <span class="badge badge-secondary">sprints</span> e <span class="badge badge-secondary">daily meetings</span>.</li>
 						<li>Experience with Team City, Atlassian Jira and <span class="badge badge-secondary">GIT</span>.</li>
 						<li>Experiência com Teamcity, Atlassian Jira e <span class="badge badge-secondary">GIT</span> / <span class="badge badge-secondary">SVN</span>.</li>
 					</ul>
@@ -328,7 +303,7 @@
 					<ul>
 						<li>Manutenção e desenvolvimento do software que controla os planos de saúde dos associados, feito em <span class="badge badge-secondary">C#</span>, <span class="badge badge-secondary">Windows Form</span>, <span class="badge badge-secondary">SQL Server</span> e <span class="badge badge-secondary">TFS</span>.</li>
 						<li>Suporte e design de novas funções para o software que se comunica com a Agência Nacional de Saúde Suplementar (ANS)</li>
-						<li>Experiência com metodologia Ágil (Kanban)</li>
+						<li>Experiência com metodologia <span class="badge badge-secondary">Ágil</span> (<span class="badge badge-secondary">Kanban</span>)</li>
 					</ul>
 				</div>
 				<div class="mine-div-time"><img class="mine-img-time" src="icons/hourglass32black.png"></img> - 09/2019</div>
@@ -337,7 +312,7 @@
 					<div id="timeInCurrentCompany" class="mine-timeline-time"></div>
 					<ul>
 						<li>Desenvolvimento e manutenção do software utilizado pela área de segurança das agências do banco Itaú. Feito em <span class="badge badge-secondary">C#</span>, <span class="badge badge-secondary">MVC#</span>, <span class="badge badge-secondary">Javascript</span>, <span class="badge badge-secondary">HTML</span>, <span class="badge badge-secondary">SQL Server</span>, usando o padrão <span class="badge badge-secondary">DDD</span>.</li>
-						<li>Desenvolvimento com IE e Chrome Selenium de robôs automatizados usando padrão FSM.</li>
+						<li>Desenvolvimento com IE e Chrome Selenium de robôs automatizados usando padrão Finite State Machine.</li>
 					</ul>
 				</div>
 			</div>
