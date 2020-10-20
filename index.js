@@ -36,26 +36,13 @@ function CalculateCurrentTimeOnCompany(){
     return message;
 }
 
-function hideSection(element){
-    if (element.getElementsByTagName("i")[0].innerHTML === "expand_more") {
-        element.getElementsByTagName("i")[0].innerHTML = "expand_less";
-        element.getElementsByClassName("description")[0].style.display = "";
-    }
-    else {
-        element.getElementsByTagName("i")[0].innerHTML = "expand_more";
-        element.getElementsByClassName("description")[0].style.display = "none";
-    }
-}
-
 function openDescription(element) {
-    if($("[data-toggle='tooltip']").attr("aria-describedby") != undefined) $("[data-toggle='tooltip']").tooltip('toggle');
-
-    if (element.getElementsByTagName("i")[0].innerHTML === "expand_more") {
-        element.getElementsByTagName("i")[0].innerHTML = "expand_less";
+    if (element.getElementsByTagName("img")[0].getAttribute("src") === "icons/down-arrow16.png") {
+        element.getElementsByTagName("img")[0].setAttribute("src", "icons/up-arrow16.png");
         element.getElementsByClassName("description")[0].style.display = "";
     }
     else {
-        element.getElementsByTagName("i")[0].innerHTML = "expand_more";
+        element.getElementsByTagName("img")[0].setAttribute("src", "icons/down-arrow16.png");
         element.getElementsByClassName("description")[0].style.display = "none";
     }
 }
