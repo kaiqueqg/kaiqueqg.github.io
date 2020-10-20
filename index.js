@@ -1,5 +1,11 @@
 function Start(){
+    //set the initial language
+    initialLanguage();
+
+    //update the time of current job
     document.getElementById("timeInCurrentCompany").innerHTML = "Analista de software - " + CalculateCurrentTimeOnCompany() + ".";
+
+    //$("[data-toggle='tooltip']").tooltip('toggle');
 }
 
 function CalculateCurrentTimeOnCompany(){
@@ -42,6 +48,8 @@ function hideSection(element){
 }
 
 function openDescription(element) {
+    if($("[data-toggle='tooltip']").attr("aria-describedby") != undefined) $("[data-toggle='tooltip']").tooltip('toggle');
+
     if (element.getElementsByTagName("i")[0].innerHTML === "expand_more") {
         element.getElementsByTagName("i")[0].innerHTML = "expand_less";
         element.getElementsByClassName("description")[0].style.display = "";
@@ -90,7 +98,4 @@ function changeLanguage(language){
     }
 }
 
-$("#initModal").modal('show');
-
 Start();
-initialLanguage();
