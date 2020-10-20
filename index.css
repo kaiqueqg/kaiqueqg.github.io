@@ -1,3 +1,4 @@
+
 button:focus{
     outline: 0;
 }
@@ -69,7 +70,6 @@ body{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 7px;
 }
 
 .mine-h3 {
