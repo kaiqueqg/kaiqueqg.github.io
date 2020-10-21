@@ -22,17 +22,18 @@
 
 .mine-progress-ccplusplus{
     width: 50%; 
-    background-color: rgb(224, 191, 255);
+    
+    background-color: rgb(160, 190, 255);
 }
 
 .mine-progress-csharp{
     width: 90%; 
-    background-color: rgb(160, 190, 255);
+    background-color: rgb(224, 191, 255);
 }
 
 .mine-progress-aspnet{
     width: 80%; 
-    background-color: rgb(160, 190, 255);
+    background-color: rgb(224, 191, 255);
 }
 
 .mine-progress-sql{
