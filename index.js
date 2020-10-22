@@ -98,6 +98,22 @@ function flashDownArrow(){
     }
 }
 
+function flashLink(){
+    let image = document.getElementById("flashLink");
+    if(image.getAttribute("src") == "icons/fast-forward16.png"){
+        image.setAttribute("src", "icons/fast-forward16red.png")
+    }
+    else{
+        image.setAttribute("src", "icons/fast-forward16.png")
+    }
+}
+
+function stopFlashLink(){
+    clearInterval(flashLinkInterval);
+    document.getElementById("flashLink").setAttribute("src", "icons/fast-forward16.png");
+}
+
 Start();
 
 let flashIconInterval = setInterval(flashDownArrow, 1000);
+let flashLinkInterval = setInterval(flashLink, 1000);
