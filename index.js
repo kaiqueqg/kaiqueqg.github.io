@@ -40,7 +40,7 @@ function openDescription(element) {
     //clearInterval(flashIconInterval);
 
     let image = element.getElementsByTagName("img")[0].getAttribute("src");
-    if (image === "icons/down-arrow16.png") {
+    if (image === "icons/down-arrow16.png" || iamge === "icons/down-arrow16red.png") {
         element.getElementsByTagName("img")[0].setAttribute("src", "icons/up-arrow16.png");
         element.getElementsByClassName("description")[0].style.display = "";
     }
@@ -100,4 +100,4 @@ function flashDownArrow(){
 
 Start();
 
-//let flashIconInterval = setInterval(flashDownArrow, 1000);
+let flashIconInterval = setInterval(flashDownArrow, 1000);
