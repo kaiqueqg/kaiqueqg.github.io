@@ -1,11 +1,11 @@
+
+
 function Start(){
     //set the initial language
     initialLanguage();
 
     //update the time of current job
     document.getElementById("timeInCurrentCompany").innerHTML = "Analista de software - " + CalculateCurrentTimeOnCompany() + ".";
-
-    //$("[data-toggle='tooltip']").tooltip('toggle');
 }
 
 function CalculateCurrentTimeOnCompany(){
@@ -37,7 +37,10 @@ function CalculateCurrentTimeOnCompany(){
 }
 
 function openDescription(element) {
-    if (element.getElementsByTagName("img")[0].getAttribute("src") === "icons/down-arrow16.png") {
+    clearInterval(flashIconInterval);
+
+    let image = element.getElementsByTagName("img")[0].getAttribute("src");
+    if (image === "icons/down-arrow16.png" || image == "icons/down-arrow16red.png") {
         element.getElementsByTagName("img")[0].setAttribute("src", "icons/up-arrow16.png");
         element.getElementsByClassName("description")[0].style.display = "";
     }
@@ -85,4 +88,16 @@ function changeLanguage(language){
     }
 }
 
+function flashDownArrow(){
+    let image = document.getElementById("flashIcon");
+    if(image.getAttribute("src") == "icons/down-arrow16.png"){
+        image.setAttribute("src", "icons/down-arrow16red.png")
+    }
+    else{
+        image.setAttribute("src", "icons/down-arrow16.png")
+    }
+}
+
 Start();
+
+let flashIconInterval = setInterval(flashDownArrow, 1000);
