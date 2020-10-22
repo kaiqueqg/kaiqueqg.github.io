@@ -38,6 +38,7 @@ button:focus{
     vertical-align: middle;
     margin-top: 3px;
     margin-bottom: 3px;
+    cursor: pointer;
     /* background-color: rgb(219, 219, 219); */
 }
 
