@@ -37,10 +37,10 @@ function CalculateCurrentTimeOnCompany(){
 }
 
 function openDescription(element) {
-    //clearInterval(flashIconInterval);
+    clearInterval(flashIconInterval);
 
     let image = element.getElementsByTagName("img")[0].getAttribute("src");
-    if (image === "icons/down-arrow16.png" || iamge === "icons/down-arrow16red.png") {
+    if (image === "icons/down-arrow16.png" || image === "icons/down-arrow16red.png") {
         element.getElementsByTagName("img")[0].setAttribute("src", "icons/up-arrow16.png");
         element.getElementsByClassName("description")[0].style.display = "";
     }
