@@ -79,5 +79,7 @@
 }
 
 .mine-about{
-    border-color: rgb(0, 0, 0);
+    border-color: lightgrey;
+    background-color: #ffffff;
+    color: black;
 }
