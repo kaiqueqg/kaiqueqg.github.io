@@ -10,7 +10,7 @@ function Start(){
 
 function CalculateCurrentTimeOnCompany(){
     let dateNow = new Date(Date.now());
-    let dateBegin = new Date(2019, 08, 10);
+    let dateBegin = new Date(2021, 01, 01);
 
     let pastTimeInYears = dateNow - dateBegin;
     pastTimeInYears = pastTimeInYears/1000/60/60/24/365;

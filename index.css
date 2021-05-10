@@ -38,6 +38,16 @@ button:focus{
     vertical-align: middle;
     margin-top: 3px;
     margin-bottom: 3px;
+<<<<<<< Updated upstream
+=======
+
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+
+    vertical-align: middle;
+    
+>>>>>>> Stashed changes
     cursor: pointer;
     /* background-color: rgb(219, 219, 219); */
 }
