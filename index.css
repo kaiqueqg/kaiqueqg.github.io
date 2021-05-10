@@ -30,16 +30,8 @@ button:focus{
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border-radius: 15px;
-    background-color: #f5f5f5;
-    color: black;
-    vertical-align: middle;
     margin-top: 3px;
     margin-bottom: 3px;
-<<<<<<< Updated upstream
-=======
 
     border-style: solid;
     border-radius: 8px;
@@ -47,9 +39,7 @@ button:focus{
 
     vertical-align: middle;
     
->>>>>>> Stashed changes
     cursor: pointer;
-    /* background-color: rgb(219, 219, 219); */
 }
 
 .mine-about-group{
@@ -107,7 +97,7 @@ body{
 .mine-progress {
     background-color: rgb(204, 204, 204);
     width: 70%;
-    border-radius: 15px;
+    border-radius: 0px;
 }
 
 .mine-progress-text {
@@ -119,9 +109,11 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px; 
+
     border-width:1px; 
     border-style:solid; 
     border-color:grey; 
+
     box-shadow: 4px 4px lightgrey;
 }
 
@@ -133,7 +125,7 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: lightgray;
-    border-radius: 16px;
+    border-radius: 0px;
 }
 
 .mine-badge {
